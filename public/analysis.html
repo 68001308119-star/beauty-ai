@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Beauty AI - วิเคราะห์ความงาม</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav>
+
+    <div class="logo">
+        ✨ Beauty AI
+    </div>
+
+    <div class="nav-links">
+        <a href="index.html">หน้าหลัก</a>
+        <a href="analysis.html">วิเคราะห์ความงาม</a>
+    </div>
+
+</nav>
+
+
+<main class="analysis-page">
+
+    <!-- หัวข้อ -->
+
+    <div class="page-title">
+
+        <span class="badge">
+            ✨ PERSONAL BEAUTY ANALYSIS
+        </span>
+
+        <h1>
+            ค้นหาสไตล์ที่เหมาะกับคุณ
+        </h1>
+
+        <p>
+            กรอกข้อมูลของคุณ แล้วให้ Beauty AI
+            ช่วยแนะนำสไตล์ที่เหมาะกับคุณ
+        </p>
+
+    </div>
+
+
+    <!-- แบบฟอร์ม -->
+
+    <section class="analysis-card">
+
+        <div class="form-group">
+
+            <label>👤 อายุ</label>
+
+            <input
+                type="number"
+                id="age"
+                placeholder="เช่น 20"
+            >
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label>🧴 สภาพผิว</label>
+
+            <select id="skin">
+
+                <option value="">
+                    -- เลือกสภาพผิว --
+                </option>
+
+                <option value="ผิวมัน">
+                    ผิวมัน
+                </option>
+
+                <option value="ผิวแห้ง">
+                    ผิวแห้ง
+                </option>
+
+                <option value="ผิวผสม">
+                    ผิวผสม
+                </option>
+
+                <option value="ผิวธรรมดา">
+                    ผิวธรรมดา
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label>🌸 รูปหน้า</label>
+
+            <select id="face">
+
+                <option value="">
+                    -- เลือกรูปหน้า --
+                </option>
+
+                <option value="รูปไข่">รูปไข่</option>
+                <option value="รูปกลม">รูปกลม</option>
+                <option value="รูปเหลี่ยม">รูปเหลี่ยม</option>
+                <option value="รูปหัวใจ">รูปหัวใจ</option>
+                <option value="รูปยาว">รูปยาว</option>
+
+            </select>
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label>🎀 สไตล์ที่ชอบ</label>
+
+            <select id="style">
+
+                <option value="">
+                    -- เลือกสไตล์ --
+                </option>
+
+                <option value="หวาน">หวาน</option>
+                <option value="น่ารัก">น่ารัก</option>
+                <option value="เกาหลี">เกาหลี</option>
+                <option value="มินิมอล">มินิมอล</option>
+                <option value="เท่">เท่</option>
+                <option value="หรู">หรู</option>
+
+            </select>
+
+        </div>
+
+    </section>
+
+
+    <!-- ทรงผม -->
+
+    <section class="hair-section">
+
+        <div class="page-title">
+
+            <span class="badge">
+                💇‍♀️ HAIR STYLE
+            </span>
+
+            <h2>
+                เลือกทรงผมที่คุณชอบ
+            </h2>
+
+            <p>
+                คลิกที่ทรงผมที่คุณสนใจ
+            </p>
+
+        </div>
+
+
+        <div class="hair-grid">
+
+
+            <!-- Korean Layer -->
+
+            <div
+                class="hair-card"
+                onclick="selectHair('Korean Layer', this)"
+            >
+
+                <div class="hair-image">
+
+                    <img
+                        src="/images/korean-layer.jpg"
+                        alt="Korean Layer"
+                    >
+
+                </div>
+
+                <div class="hair-info">
+
+                    <h3>🌸 Korean Layer</h3>
+
+                    <p>
+                        เลเยอร์สไตล์เกาหลี
+                        ให้ลุคหวานและเป็นธรรมชาติ
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- C-Curl -->
+
+            <div
+                class="hair-card"
+                onclick="selectHair('C-Curl', this)"
+            >
+
+                <div class="hair-image">
+
+                    <img
+                        src="/images/c-curl.jpg"
+                        alt="C-Curl"
+                    >
+
+                </div>
+
+                <div class="hair-info">
+
+                    <h3>🎀 C-Curl</h3>
+
+                    <p>
+                        ปลายผมงุ้มเข้า
+                        ช่วยให้กรอบหน้าดูนุ่มละมุน
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Hush Cut -->
+
+            <div
+                class="hair-card"
+                onclick="selectHair('Hush Cut', this)"
+            >
+
+                <div class="hair-image">
+
+                    <img
+                        src="/images/hush-cut.jpg"
+                        alt="Hush Cut"
+                    >
+
+                </div>
+
+                <div class="hair-info">
+
+                    <h3>✨ Hush Cut</h3>
+
+                    <p>
+                        เลเยอร์บาง ๆ
+                        เหมาะกับลุคมินิมอล
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Wolf Cut -->
+
+            <div
+                class="hair-card"
+                onclick="selectHair('Wolf Cut', this)"
+            >
+
+                <div class="hair-image">
+
+                    <img
+                        src="/images/wolf-cut.jpg"
+                        alt="Wolf Cut"
+                    >
+
+                </div>
+
+                <div class="hair-info">
+
+                    <h3>🖤 Wolf Cut</h3>
+
+                    <p>
+                        เลเยอร์ชัด
+                        เหมาะกับลุคเท่
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Long Layer -->
+
+            <div
+                class="hair-card"
+                onclick="selectHair('Long Layer', this)"
+            >
+
+                <div class="hair-image">
+
+                    <img
+                        src="/images/long-layer.jpg"
+                        alt="Long Layer"
+                    >
+
+                </div>
+
+                <div class="hair-info">
+
+                    <h3>🌷 Long Layer</h3>
+
+                    <p>
+                        ผมยาวเลเยอร์
+                        ช่วยเพิ่มมิติให้เส้นผม
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Bob -->
+
+            <div
+                class="hair-card"
+                onclick="selectHair('Bob', this)"
+            >
+
+                <div class="hair-image">
+
+                    <img
+                        src="/images/bob.jpg"
+                        alt="Bob"
+                    >
+
+                </div>
+
+                <div class="hair-info">
+
+                    <h3>🤍 Bob</h3>
+
+                    <p>
+                        ทรงบ๊อบทันสมัย
+                        เหมาะกับลุคมินิมอล
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- แสดงทรงผมที่เลือก -->
+
+    <section id="selected-hair-result"></section>
+
+
+    <!-- ผล AI -->
+
+    <section id="result"></section>
+
+
+    <!-- ปุ่มวิเคราะห์ -->
+
+    <div class="analyze-container">
+
+        <button
+            class="analyze-button"
+            onclick="analyzeBeauty()"
+        >
+            ✨ วิเคราะห์ความงาม
+        </button>
+
+    </div>
+
+
+</main>
+
+
+<script src="analysis.js"></script>
+
+</body>
+
+</html>
